@@ -37,3 +37,8 @@ The Capsule Network that I'll define is made of two main parts:
 </p>
 
 The above image was taken from the original [Capsule Network paper (Hinton et. al.)](https://arxiv.org/pdf/1710.09829.pdf). The notebook follows the architecture described in that paper and tries to replicate some of the experiments, such as feature visualization, that the authors pursued. 
+
+---
+## Running Code Locally
+
+If you're interested in running this code on your own computer, there are thorough instructions on setting up anaconda, and downloading PyTorch and the necessary libraries in the [readme of Udacity's deep learning repo](https://github.com/udacity/deep-learning-v2-pytorch/blob/master/README.md). After downloading the necessary libraries, you can proceed with cloning and running this code, as usual.
