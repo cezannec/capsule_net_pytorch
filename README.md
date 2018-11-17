@@ -8,7 +8,7 @@ This is an implementation in PyTorch and this notebook assumes that you are alre
 ### What are Capsules?
 
 Capsules are a small group of neurons that have a few key traits:
->* Each neuron in a capsule represents various properties of a particular image part; properties like a parts color, width, etc. 
+* Each neuron in a capsule represents various properties of a particular image part; properties like a parts color, width, etc. 
 * Every capsule **outputs a vector**, which has some magnitude and orientation.
 * Capsules have a hierarchy between child and parent capsules and use **dynamic routing** to find the strongest connections between the output of one capsule and the inputs of the next layer of capsules. 
 
