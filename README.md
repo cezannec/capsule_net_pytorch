@@ -12,6 +12,10 @@ Capsules are a small group of neurons that have a few key traits:
 * Every capsule **outputs a vector**, which has some magnitude and orientation.
 * Capsules have a hierarchy between child and parent capsules and use **dynamic routing** to find the strongest connections between the output of one capsule and the inputs of the next layer of capsules. 
 
+<p align="center" >
+  <img src='./assets/cat_face_2.png' width=60% />
+</p>
+
 You can read more about all of these traits in [my blog post about capsules and dynamic routing](https://cezannec.github.io/Capsule_Networks/).
 
 ### Representing Relationships Between Parts
@@ -28,4 +32,8 @@ The Capsule Network that I'll define is made of two main parts:
 1. A convolutional encoder
 2. A fully-connected, linear decoder
 
-The notebook follows the architecture described [in the original Capsule Network paper](https://arxiv.org/pdf/1710.09829.pdf). 
+<p align="center" >
+  <img src='./assets/complete_caps_net.png' width=80% />
+</p>
+
+The above image was taken from the original [Capsule Network paper (Hinton et. al.)](https://arxiv.org/pdf/1710.09829.pdf). The notebook follows the architecture described in that paper and tries to replicate some of the experiments, such as feature visualization, that the authors pursued. 
