@@ -8,9 +8,10 @@ This is an implementation in PyTorch and this notebook assumes that you are alre
 ### What are Capsules?
 
 Capsules are a small group of neurons that have a few key traits:
-* Each neuron in a capsule represents various properties of a particular image part; properties like a parts color, width, etc. 
-* Every capsule **outputs a vector**, which has some magnitude and orientation.
-* Capsules have a hierarchy between child and parent capsules and use **dynamic routing** to find the strongest connections between the output of one capsule and the inputs of the next layer of capsules. 
+* Each neuron in a capsule represents various properties of a particular image part; properties like a parts color, width, etc.
+* Every capsule **outputs a vector**, which has some magnitude (that represents a part's **existence**) and orientation (that represents a part's generalized pose).
+* A capsule network is made of multiple layers of capsules; during training, this network aims to learn the spatial relationships between the parts and whole of an object (ex. how the position of eyes and a nose relate to the position of a whole face in an image).
+* Capsules represent relationships between parts of a whole object by using **dynamic routing** to weight the connections between one layer of capsules and the next and creating strong connections between spatially-related object parts.
 
 <p align="center" >
   <img src='./assets/cat_face_2.png' width=60% />
